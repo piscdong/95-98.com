@@ -8,11 +8,13 @@ html, body {
 a {
 	color: #036;
 }
-.logo {
+h1 {
+	padding: 0;
 	margin: 60px auto;
 	width: 400px;
 	height: 280px;
-	text-align: center;
+	overflow: hidden;
+	text-indent: -500px;
 	background: url(../images/logo.png) no-repeat center center;
 }
 .foot {
@@ -21,7 +23,16 @@ a {
 	width: 600px;
 	padding: 10px;
 	clear: both;
+	display: block;
+}
+.foot li {
+	margin: 0;
+	padding: 0;
+}
+.copyright {
+	display: inline;
 }
 .email {
 	float: right;
+	display: block;
 }
