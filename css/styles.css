@@ -1,38 +1,50 @@
-html, body {
+@charset "UTF-8";
+* {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	outline: none;
+	box-sizing: border-box;
+	border: 0;
+	font-family: -apple-system, BlinkMacSystemFont, PingFang SC, SanFranciscoDisplay, Hiragino Sans GB, Microsoft YaHei, 微软雅黑, sans-serif, tahoma, arial, \5b8b\4f53;
+	font-weight: 400
+}
+
+body {
 	background: #eee;
 	font-size: 15px;
-	font-family: Arial, Arial, Helvetica, sans-serif;
 }
+
 a {
 	color: #036;
 }
+
 h1 {
-	padding: 0;
 	margin: 60px auto;
-	width: 400px;
+	max-width: 400px;
 	height: 280px;
 	overflow: hidden;
 	text-indent: -500px;
 	background: url(../images/logo.png) no-repeat center center;
 }
+
 .foot {
 	border-top: 1px solid #ccc;
 	margin: 20px auto;
-	width: 600px;
+	max-width: 600px;
 	padding: 10px;
-	clear: both;
 	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
 .foot li {
-	margin: 0;
-	padding: 0;
-}
-.copyright {
-	display: inline;
-}
-.email {
-	float: right;
 	display: block;
+}
+
+@media (max-width:640px) {
+	h1 {
+		background-size: 200px auto;
+	}
 }
